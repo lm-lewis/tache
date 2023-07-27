@@ -1,13 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import App from "../App.jsx"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Tache App',
-  description: 'Gestion des taches',
+  title: 'Tâche App',
+  description: 'Gestion des tâches',
 }
 
 export default function RootLayout({
@@ -17,7 +16,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <App /> */}
       <body className={inter.className}>{children}</body>
     </html>
   )
